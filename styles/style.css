@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-image: url("http://via.placeholder.com/1920x650");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #3e3e3e;
+  width: 1960px;
+  height: 650px;
+  color: #fefefe;
+}
+
+header .greet {
+  position: relative;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -25%;
+  margin-top: -6%;
+}
+
+header .greet .hello {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4.5vw;
+}
+
+header .greet .description {
+  font-size: 2vw;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  width: 380px;
+  margin: 20px;
+  border: #d4d4d4 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.card .card-image {
+  padding: 10px;
+}
+
+.card .card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card .card-desc {
+  padding: 20px 10px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.card .card-action {
+  text-align: center;
+}
+
+.btn-default {
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  border: #333 3px solid;
+}
+/*# sourceMappingURL=style.css.map */
