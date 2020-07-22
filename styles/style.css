@@ -52,23 +52,52 @@ header {
   width: 1960px;
 }
 
+@media (max-width: 768px) {
+  header {
+    background-image: url("http://via.placeholder.com/600x600");
+    height: 650px;
+    width: 100%;
+  }
+}
+
 header .greet {
   left: 50%;
   position: absolute;
-  margin-left: -25%;
+  margin-left: -40%;
   margin-top: -6%;
-  top: 55vh;
+  text-align: center;
+  top: 35vh;
+  width: 80vw;
+}
+
+@media (max-width: 768px) {
+  header .greet {
+    margin-left: -38%;
+    margin-top: -25%;
+    top: 35vh;
+  }
 }
 
 header .greet .description {
-  font-size: 2vw;
+  display: block;
+  font-size: 2.5vw;
+}
+
+@media (max-width: 768px) {
+  header .greet .description {
+    font-size: 48px;
+  }
 }
 
 header .greet .hello {
-  display: block;
-  font-size: 4.5vw;
+  font-size: 5vw;
   font-weight: bold;
-  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header .greet .hello {
+    font-size: 80px;
+  }
 }
 
 section {

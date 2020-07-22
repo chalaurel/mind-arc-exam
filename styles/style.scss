@@ -1,3 +1,5 @@
+$breakpoint-tablet: 768px;
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -43,6 +45,12 @@ body {
 }
 
 header {
+    @media (max-width: $breakpoint-tablet) {
+        background-image: url('http://via.placeholder.com/600x600');
+        height: 650px;
+        width: 100%;
+    }
+
     background-color: #3e3e3e;
     background-image: url('http://via.placeholder.com/1920x650');
     background-repeat: no-repeat;
@@ -54,24 +62,56 @@ header {
     .greet {
         left: 50%;
         position: absolute;
-        margin-left: -25%;
+        margin-left: -40%;
         margin-top: -6%;
-        top: 55vh;
+        text-align: center;
+        top: 35vh;
+        width: 80vw;
+
+        @media (max-width: $breakpoint-tablet) {
+            margin-left: -38%;
+            margin-top: -25%;
+            top: 35vh;
+        }
 
         .description {
-            font-size: 2vw;
+            display: block;
+            font-size: 2.5vw;
+
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 48px;
+            }
         }
 
         .hello {
-            display: block;
-            font-size: 4.5vw;
+
+            font-size: 5vw;
             font-weight: bold;
-            text-align: center;
+
+
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 80px;
+            }
         }
     }
 
 
+
+
 }
+
+// @include breakpoint(453px $breakpoint-tablet) {
+//     header {
+//         der {
+//             background-color: #3e3e3e;
+//             background-image: url('http://via.placeholder.com/600x600');
+//             background-repeat: no-repeat;
+//             background-size: cover;
+//             color: #fefefe;
+//             height: 650px;
+//             width: 1960px;
+//     }                  
+// }
 
 section {
     display: flex;
