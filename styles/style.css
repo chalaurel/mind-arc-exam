@@ -1,48 +1,17 @@
 body {
-  margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
 }
 
-header {
-  background-image: url("http://via.placeholder.com/1920x650");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #3e3e3e;
-  width: 1960px;
-  height: 650px;
-  color: #fefefe;
-}
-
-header .greet {
-  position: relative;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  margin-left: -25%;
-  margin-top: -6%;
-}
-
-header .greet .hello {
-  display: block;
-  text-align: center;
+.btn-default {
+  text-transform: uppercase;
+  color: #333;
   font-weight: bold;
-  font-size: 4.5vw;
-}
-
-header .greet .description {
-  font-size: 2vw;
-}
-
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px 0px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  background-color: transparent;
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  border: #333 3px solid;
 }
 
 .card {
@@ -73,14 +42,44 @@ section {
   text-align: center;
 }
 
-.btn-default {
-  text-transform: uppercase;
-  color: #333;
+header {
+  background-color: #3e3e3e;
+  background-image: url("http://via.placeholder.com/1920x650");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fefefe;
+  height: 650px;
+  width: 1960px;
+}
+
+header .greet {
+  left: 50%;
+  position: absolute;
+  margin-left: -25%;
+  margin-top: -6%;
+  top: 55vh;
+}
+
+header .greet .description {
+  font-size: 2vw;
+}
+
+header .greet .hello {
+  display: block;
+  font-size: 4.5vw;
   font-weight: bold;
-  background-color: transparent;
-  padding: 10px 15px;
-  letter-spacing: 2px;
-  border-radius: 30px;
-  border: #333 3px solid;
+  text-align: center;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0px;
 }
 /*# sourceMappingURL=style.css.map */

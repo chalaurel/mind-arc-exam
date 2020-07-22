@@ -1,60 +1,17 @@
 body {
-    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
-header {
-    background-image: url('http://via.placeholder.com/1920x650');
-    background-repeat: no-repeat;
-    // background-position: center center;
-    // background-attachment: absolute;
-    background-size: cover;
-    background-color: #3e3e3e;
-    width: 1960px;
-    height: 650px;
-
-    color: #fefefe;
-
-    .greet {
-        position: relative;
-        // top: 50%;
-        // left: 50%;
-        // margin-left: -310px;
-        // margin-top: -50px;
-
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-        // text-align: center; 
-        // div {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            margin-left: -25%;
-            margin-top: -6%;
-            .hello {
-                display: block;
-                text-align: center;
-                font-weight: bold;
-                font-size: 4.5vw;
-            }
-
-            .description {
-                font-size: 2vw;
-            }
-
-        // }
-
-    }
-
-
-}
-
-section {
-    display: flex;
-    margin: 20px 0px;
-    justify-content: center;
-    flex-wrap: wrap;
+.btn-default {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    border: #333 3px solid;
 }
 
 .card {
@@ -85,21 +42,40 @@ section {
     }
 }
 
-.btn-default {
-    text-transform: uppercase;
-    color: #333;
-    font-weight: bold;
-    background-color: transparent;
-    padding: 10px 15px;
-    letter-spacing: 2px;
-    border-radius: 30px;
-    border: #333 3px solid;
+header {
+    background-color: #3e3e3e;
+    background-image: url('http://via.placeholder.com/1920x650');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fefefe;
+    height: 650px;
+    width: 1960px;
+
+    .greet {
+        left: 50%;
+        position: absolute;
+        margin-left: -25%;
+        margin-top: -6%;
+        top: 55vh;
+
+        .description {
+            font-size: 2vw;
+        }
+
+        .hello {
+            display: block;
+            font-size: 4.5vw;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+
 }
 
-// .centered {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     margin-top: -50px;
-//     margin-left: -100px;
-// }
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0px;
+}
